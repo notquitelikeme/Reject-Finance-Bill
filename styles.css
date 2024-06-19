@@ -1,5 +1,6 @@
 * {
     background-color: rgb(255, 255, 171);
+    font-family: "Open Sans", sans-serif;
 }
 
 .header {
@@ -83,4 +84,15 @@
 
 .arrow.right {
     right: 0;
+}
+@media screen and (max-width: 768px) {
+    .container-1 {
+        flex-direction: column;
+    }
+
+    .tweets-wrapper blockquote {
+        flex: 1 0 auto;
+        margin: 0 5px;
+        max-width: 100%;
+    }
 }
