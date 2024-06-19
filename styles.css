@@ -1,0 +1,86 @@
+* {
+    background-color: rgb(255, 255, 171);
+}
+
+.header {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.header h2 {
+    color: red;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+
+.navbar ul li {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.container-1 {
+    display: flex;
+}
+
+.container-1 img {
+    width: 40%;
+    height: 40%;
+    padding: 20px;
+}
+
+.container-1 h1 {
+    color: red;
+}
+
+.tweets-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tweets-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    width: calc(100% - 60px); /* Account for the arrow buttons */
+    margin: 0 30px; /* Add space for the arrows */
+}
+
+.tweets-wrapper blockquote {
+    flex: 0 0 45%;
+    padding: 10px;
+    transform: scale(0.9);
+    margin-right: 20px; /* Add space between tweets */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
